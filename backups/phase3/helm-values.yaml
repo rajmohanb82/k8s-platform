@@ -1,0 +1,20 @@
+COMPUTED VALUES:
+app:
+  version: v1.0.0
+image:
+  pullPolicy: IfNotPresent
+  repository: platformops
+  tag: v1
+replicaCount: 4
+resources:
+  limits:
+    cpu: 250m
+    memory: 256Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi
+service:
+  nodePort: 30080
+  port: 80
+  targetPort: 5252
+  type: NodePort
