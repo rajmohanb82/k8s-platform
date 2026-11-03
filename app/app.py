@@ -34,11 +34,13 @@ def home():
     </head>
     <body>
         <div class="card">
-            <h1>PlatformOps Kubernetes Lab</h1>
+            <h1>PlatformOps - Automated GitOps Release</h1>
             <h2 class="version">{VERSION}</h2>
             <p>Containerized Flask Application</p>
             <p>Pod: {socket.gethostname()}</p>
-            <p>Managed using Kubernetes + Helm</p>
+            <p>Release: v1.2.0</p>
+	    <p>Deployment: GitHub Actions + GHCR + Argo CD</p>
+	    <p>Managed using Kubernetes + Helm</p>
         </div>
     </body>
     </html>
